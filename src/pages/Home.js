@@ -6,8 +6,11 @@ import Excercises from '../components/Excercises.js';
 
 
 const Home = () => {
-  const [bodyPart, setBodyPart] = useState('all');
+  const [bodyPart, setBodyPart] = useState('all')
   const [excercises, setExcercises] = useState([]);
+
+  console.log(bodyPart)
+  
   return (
     <Box>
       <HeroBanner />
