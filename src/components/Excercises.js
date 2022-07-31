@@ -50,19 +50,19 @@ const Excercises = ( {excercises, setExcercises, bodyPart}) => {
         {currentExcercises.map( (excercise, index)=> (
           <ExcerciseCard key={index} excercise={excercise} />
         ) )}
-        </Stack>
-        <Stack mt="100px" alignItems="center">
-            {excercises.length > 9 && (
-              <Pagination
-                color="standard"
-                shape="rounded"
-                defaultPage={1}
-                count={Math.ceil(excercises.length / excercisesPerPage)}
-                page={currentPage}
-                onChange={paginate}
-                size="large"
-              />
-            )}
+      </Stack>
+      <Stack mt="100px" alignItems="center">
+        {excercises.length > 9 && (
+          <Pagination
+            color="standard"
+            shape="rounded"
+            defaultPage={1}
+            count={Math.ceil(excercises.length / excercisesPerPage)}
+            page={currentPage}
+            onChange={paginate}
+            size="large"
+          />
+        )}
         </Stack>
     </Box>
   )
