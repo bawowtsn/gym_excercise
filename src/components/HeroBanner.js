@@ -2,8 +2,9 @@ import React from 'react';
 import { Box, Stack, Typography, Button } from '@mui/material';
 import "../App.css"
 
+
 import HeroBannerImage from "../assets/images/banner.png";
-//import App from '../App.css';
+
 
 const HeroBanner = () => {
   return (
